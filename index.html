@@ -2,26 +2,26 @@
 <html lang="uk">
 <head>
     <!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1383381416062393');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1383381416062393&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1383381416062393');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=1383381416062393&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Delomerten</title>
-    <link rel="icon" href = "img_2.jpg" type = "jpg" >
+    <link rel="icon" href="img_2.jpg" type="jpg">
     <style>
         /* Скидаємо відступи та заповнення для html та body для максимального контролю */
         html, body {
@@ -52,14 +52,11 @@ src="https://www.facebook.com/tr?id=1383381416062393&ev=PageView&noscript=1"
             background-color: transparent; /* Якщо потрібен фон хедера, вкажіть тут */
         }
 
-        /* Видалено стиль для .header-icon, оскільки іконок не буде */
-
         .profile-section {
             display: flex;
             flex-direction: column;
             align-items: center;
             margin-top: 0px; /* Вміст починається одразу після хедера, без додаткового відступу */
-            /* Якщо потрібен невеликий відступ між хедером і профілем, можете додати тут margin-top: 20px; */
         }
 
         .profile-picture {
@@ -75,10 +72,7 @@ src="https://www.facebook.com/tr?id=1383381416062393&ev=PageView&noscript=1"
             font-weight: bold;
             margin-top: 5px;
             padding: 10px;
-            /* Видалено display: flex та align-items: center, оскільки іконки немає */
         }
-        /* Видалено стиль для .username .fa-solid */
-
 
         .tagline {
             font-size: 16px;
@@ -170,12 +164,12 @@ src="https://www.facebook.com/tr?id=1383381416062393&ev=PageView&noscript=1"
 </head>
 <body>
     <header>
-        </header>
+    </header>
 
     <div class="profile-section">
         <img src="f0f9dc2d-6104-4777-a7af-8283da0a64bf_IMG-6002.webp" alt="Profile Picture" class="profile-picture">
         <div class="username">@delomerten</div>
-        <img src="img_3.webp" width = 25px heigh = 25px>
+        <img src="img_3.webp" width="25px" height="25px">
         <div class="tagline">DELOMERTEN KYC</div>
     </div>
 
@@ -194,10 +188,12 @@ src="https://www.facebook.com/tr?id=1383381416062393&ev=PageView&noscript=1"
         <span class="button-text">НАПИШИ МЕНІ І ОТРИМАЙ СВОЇ ГРОШІ ШВИДКО <span class="emoji">🤩</span></span>
         <span class="dots"></span>
     </button>
-    <h5 margin-top = 100px>Cookie Preferences·Report·Privacy</h5>
+    <h5 style="margin-top: 100px;">Cookie Preferences·Report·Privacy</h5>
 
     <script>
         function redirectToInstagram() {
+            // Відстеження кліку по кнопці як події Lead
+            fbq('track', 'Lead', { content_name: 'Instagram Redirect' });
             window.open("https://www.instagram.com/delomerten/", "_blank");
         }
     </script>
