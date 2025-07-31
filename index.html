@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delomerten</title>
+    <link rel="icon" href = "img_2.jpg" type = "jpg" >
+    <style>
+        /* Скидаємо відступи та заповнення для html та body для максимального контролю */
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%; /* Забезпечує, що html та body займають повну висоту */
+        }
+
+        body {
+            background-color: #000;
+            color: white;
+            font-family: Arial, sans-serif; /* Or any other suitable font */
+            display: flex;
+            flex-direction: column; /* Елементи розташовуються в стовпчик */
+            align-items: center; /* Центрує елементи по горизонталі */
+            justify-content: flex-start; /* Вирівнює вміст до верху контейнера (body) */
+            min-height: 100vh;
+            padding: 50px;
+            box-sizing: border-box; /* Важливо для коректного розрахунку розмірів з padding */
+        }
+
+        header {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px; /* Залишаємо відступи всередині хедера */
+            box-sizing: border-box;
+            background-color: transparent; /* Якщо потрібен фон хедера, вкажіть тут */
+        }
+
+        /* Видалено стиль для .header-icon, оскільки іконок не буде */
+
+        .profile-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 0px; /* Вміст починається одразу після хедера, без додаткового відступу */
+            /* Якщо потрібен невеликий відступ між хедером і профілем, можете додати тут margin-top: 20px; */
+        }
+
+        .profile-picture {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 0px;
+        }
+
+        .username {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 5px;
+            padding: 10px;
+            /* Видалено display: flex та align-items: center, оскільки іконки немає */
+        }
+        /* Видалено стиль для .username .fa-solid */
+
+
+        .tagline {
+            font-size: 16px;
+            color: #aaa;
+            margin-top: 40px;
+        }
+
+        .instructions {
+            width: 100%;
+            max-width: 400px;
+            text-align: left;
+            font-weight: bold;
+        }
+
+        .instructions h2 {
+            font-size: 20px;
+            margin-top: 20px;
+            text-align: center;
+            font-weight: bold;      
+        }
+
+        .instructions ol {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            font-weight: bold;
+        }
+
+        .instructions li {
+            font-size: 18px;
+            margin-top: 15px;
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+        }
+
+        .instructions li:before {
+            content: counter(list-item) ". ";
+            counter-increment: list-item;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+        .emoji {
+            margin-left: 10px;
+        }
+
+        /* Styling for the button */
+        .action-button {
+            margin-top: 5px;
+            padding: 15px;
+            background-color: #333;
+            border: none;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 450px;
+            cursor: pointer;
+            color: white;
+            font-size: 16px;
+            text-align: left;
+            box-sizing: border-box;
+            transition: background-color 0.3s ease;
+        }
+
+        .action-button:hover {
+            background-color: #555;
+        }
+
+        .action-button img {
+            width: 40px;
+            height: 40px;
+            border-radius: 5px;
+            margin-right: 15px;
+        }
+
+        .action-button .button-text {
+            flex-grow: 1;
+            text-align: left;
+        }
+
+        .action-button .dots {
+            font-size: 24px;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        </header>
+
+    <div class="profile-section">
+        <img src="f0f9dc2d-6104-4777-a7af-8283da0a64bf_IMG-6002.webp" alt="Profile Picture" class="profile-picture">
+        <div class="username">@delomerten</div>
+        <img src="img_3.webp" width = 25px heigh = 25px>
+        <div class="tagline">DELOMERTEN KYC</div>
+    </div>
+
+    <div class="instructions">
+        <h2>ЩО ПОТРІБНО ЗРОБИТИ?</h2>
+        <ol>
+            <li>Напиши мені в Instagram <span class="emoji">🥰</span></li>
+            <li>Пройди верифікацію <span class="emoji">✅</span></li>
+            <li>Отримай гроші на свою карту <span class="emoji">😀</span></li>
+        </ol>
+        <p style="text-align: center; font-size: 20px; margin-top: 30px;">👇</p>
+    </div>
+
+    <button class="action-button" onclick="redirectToInstagram()">
+        <img src="img_2.jpg" alt="Small image">
+        <span class="button-text">НАПИШИ МЕНІ І ОТРИМАЙ СВОЇ ГРОШІ ШВИДКО <span class="emoji">🤩</span></span>
+        <span class="dots"></span>
+    </button>
+    <h5 margin-top = 100px>Cookie Preferences·Report·Privacy</h5>
+
+    <script>
+        function redirectToInstagram() {
+            window.open("https://www.instagram.com/delomerten/", "_blank");
+        }
+    </script>
+</body>
+</html>
