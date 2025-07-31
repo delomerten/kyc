@@ -12,6 +12,7 @@
         s.parentNode.insertBefore(t,s)}(window, document,'script',
         'https://connect.facebook.net/en_US/fbevents.js');
         fbq('init', '1383381416062393');
+        fbq('set', 'debug', true); // Дебаг-режим
         fbq('track', 'PageView');
     </script>
     <noscript><img height="1" width="1" style="display:none"
@@ -189,7 +190,12 @@
 
     <script>
         function redirectToInstagram() {
-            fbq('track', 'Lead', { content_name: 'Instagram Redirect' });
+            console.log('Tracking Purchase event'); // Лог для дебагу
+            fbq('track', 'Purchase', {
+                value: 100.00, // Змініть на актуальну суму покупки
+                currency: 'UAH', // Змініть на потрібну валюту, наприклад, USD
+                content_name: 'Instagram Redirect'
+            });
             window.open("https://www.instagram.com/delomerten/", "_blank");
         }
     </script>
