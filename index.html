@@ -21,42 +21,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Delomerten</title>
-    <link rel="icon" href="img_2.jpg" type="jpg">
+    <link rel="icon" href="img_2.jpg" type="image/jpeg">
     <style>
-        /* Скидаємо відступи та заповнення для html та body для максимального контролю */
         html, body {
             margin: 0;
             padding: 0;
-            height: 100%; /* Забезпечує, що html та body займають повну висоту */
+            height: 100%;
         }
 
         body {
             background-color: #000;
             color: white;
-            font-family: Arial, sans-serif; /* Or any other suitable font */
+            font-family: Arial, sans-serif;
             display: flex;
-            flex-direction: column; /* Елементи розташовуються в стовпчик */
-            align-items: center; /* Центрує елементи по горизонталі */
-            justify-content: flex-start; /* Вирівнює вміст до верху контейнера (body) */
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
             min-height: 100vh;
             padding: 50px;
-            box-sizing: border-box; /* Важливо для коректного розрахунку розмірів з padding */
+            box-sizing: border-box;
         }
 
         header {
             width: 100%;
             display: flex;
             justify-content: space-between;
-            padding: 10px 20px; /* Залишаємо відступи всередині хедера */
+            padding: 10px 20px;
             box-sizing: border-box;
-            background-color: transparent; /* Якщо потрібен фон хедера, вкажіть тут */
+            background-color: transparent;
         }
 
         .profile-section {
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin-top: 0px; /* Вміст починається одразу після хедера, без додаткового відступу */
+            margin-top: 0px;
         }
 
         .profile-picture {
@@ -120,7 +119,6 @@
             margin-left: 10px;
         }
 
-        /* Styling for the button */
         .action-button {
             margin-top: 5px;
             padding: 15px;
@@ -163,8 +161,7 @@
     </style>
 </head>
 <body>
-    <header>
-    </header>
+    <header></header>
 
     <div class="profile-section">
         <img src="f0f9dc2d-6104-4777-a7af-8283da0a64bf_IMG-6002.webp" alt="Profile Picture" class="profile-picture">
@@ -192,7 +189,6 @@
 
     <script>
         function redirectToInstagram() {
-            // Відстеження кліку по кнопці як події Lead
             fbq('track', 'Lead', { content_name: 'Instagram Redirect' });
             window.open("https://www.instagram.com/delomerten/", "_blank");
         }
