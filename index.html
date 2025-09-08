@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-   <!-- Meta Pixel Code -->
+
+<!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -11,33 +12,12 @@ n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '743832341806476');
+fbq('init', '1831937671093421');
 fbq('track', 'PageView');
-
-// ===== CUSTOM EVENTS =====
-// Відстеження кліку по кнопці Messenger
-document.addEventListener('DOMContentLoaded', function() {
-  var messengerBtn = document.getElementById('messengerBtn');
-  if(messengerBtn){
-    messengerBtn.addEventListener('click', function() {
-      fbq('trackCustom', 'Messenger_Click');
-    });
-  }
-
-  // Відстеження кліку по кнопці Instagram Direct
-  var instaBtn = document.getElementById('instaBtn');
-  if(instaBtn){
-    instaBtn.addEventListener('click', function() {
-      fbq('trackCustom', 'InstagramDM_Click');
-    });
-  }
-});
 </script>
-
-<noscript>
-  <img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=743832341806476&ev=PageView&noscript=1"/>
-</noscript>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1831937671093421&ev=PageView&noscript=1"
+/></noscript>
 <!-- End Meta Pixel Code -->
     
     <meta charset="UTF-8">
@@ -222,5 +202,6 @@ document.addEventListener('DOMContentLoaded', function() {
     </script>
 </body>
 </html>
+
 
 
